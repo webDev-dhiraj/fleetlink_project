@@ -1,37 +1,3 @@
-// import React, { useState } from 'react';
-// import API from '../api';
-
-// export default function AddVehicle() {
-//   const [form, setForm] = useState({ name: '', capacityKg: '', tyres: '' });
-//   const [message, setMessage] = useState('');
-
-//   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
-
-//   const handleSubmit = async e => {
-//     e.preventDefault();
-//     try {
-//       const res = await API.post('/vehicles', form);
-//       console.log("res :",res.data);
-      
-//       setMessage('Vehicle added: ' + res.data.name);
-//     } catch (err) {
-//       setMessage('Error: ' + err.response?.data?.error);
-//     }
-//   };
-
-//   return (
-//     <div className=''>
-//       <h2>Add Vehicle</h2>
-//       <form onSubmit={handleSubmit}>
-//         <input name="name" placeholder="Name" value={form.name} onChange={handleChange} />
-//         <input name="capacityKg" type="number" placeholder="Capacity" value={form.capacityKg} onChange={handleChange} />
-//         <input name="tyres" type="number" placeholder="Tyres" value={form.tyres} onChange={handleChange} />
-//         <button type="submit">Add</button>
-//       </form>
-//       <p>{message}</p>
-//     </div>
-//   );
-// }
 
 import React, { useState } from 'react';
 import API from '../api';
